@@ -33,11 +33,15 @@ about:
 ---
 
 ::: {#about}
-Words here
+## About me
+I am an ecologist, a naturalist, and an educator. I most enjoy studying animal behavior, and the ecosystems shared by humans and other species. I’m endlessly distracted by species interactions, risk-sensitive foraging strategies, and pollinator biology. I’m particularly interested in mapping native bee habitats, investigating parasite and predator dynamics, and brainstorming accessible tools for wildlife science. I’ve enjoyed working with regional parks, zoos, and other public partners to study and teach about living systems. 
+
+I’m grateful for experience and training in a wide range of field research and environmental outreach and education. I’ve benefitted greatly from the generous opportunities and knowledge offered through apprenticeships, internships and volunteering with numerous extremely skilled and smart scientists. Ultimately, I aim for my research efforts to similarly support, empower, and help future generations of scientists across all backgrounds and stages of life.
+
+Outside of formal research, I apply my background in organic landscaping as lazily as I can in a feral garden, full of its own buzzing creatures, and a small flock of chickens. I love painting, hiking, SCUBA, and sightseeing. I live in Minnesota with my wife and our two cats. 
 
 ## Education
-
-**BS Ecology and Evolutionary Biology** \| *University of Colorado Boulder* \| 2024
-
+**BS Psychology** \| Seattle Pacific University
 <!--{{< meta education >}}-->
 :::
+
