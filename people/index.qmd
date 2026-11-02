@@ -1,5 +1,5 @@
 ---
-title: "Meet the Group"
+title: ""
 listing:
   - id: pi
     include: 
@@ -63,11 +63,17 @@ listing:
 page-layout: full
 ---
 
-::: research-callout1
-We're a dedicated and diverse group working better understand insect responses to global change and advocate for their conservation. Interested in joining the group? See our available [opportunities](../opportunities.qmd) to learn more about joining the lab.
-
-![](lab-photo.png){width="100%"}
+:::::::{.research-callout1.yl}
+:::{.callout-header}
+### {{< iconify clarity:group-solid size=1.25em >}} Meet the group
 :::
+
+:::{.callout-body}
+We're a dedicated and diverse group working better understand insect responses to global change and advocate for their conservation. Interested in joining the group? See our available [opportunities](../opportunities.qmd) to learn more about joining the lab.
+:::
+
+![](lab-photo.png){width="75%" fig-align="center"}
+:::::::
 
 </br> </br>
 
@@ -108,7 +114,7 @@ We also collaborate with a bunch of labs across the country -- check out their w
 {{< fa bug >}} [**Winfree Lab**](https://winfreelab.com/) Rutgers University
 
 {{< fa bug >}} [**Pollinator Ecology Lab (Brian Spiesman)**](https://pollinatorlab.com/) Kansas State University
- 
+
 {{< fa bug >}} [**Gratton Lab**](https://gratton.entomology.wisc.edu/) University of Wisconsin-Madison
 
 {{< fa bug >}} [**Entomological Data Science Lab (Melissa Guzman)**](https://edslab.org/team/) Cornell University

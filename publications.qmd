@@ -1,5 +1,5 @@
 ---
-title: "Publications"
+title: ""
 listing:
   - id: pubs-2020
     contents: "publications/2020/*/index.qmd"
@@ -33,43 +33,49 @@ listing:
     sort: "date desc"
 ---
 
+:::::::{.research-callout1.yl}
+:::{.callout-header}
+### {{< iconify nrk:magazine-solid size=1em >}} Publications
+:::
 
-::: research-callout1
+:::{.callout-body}
 Below you'll find details on the the lab's publications. In full details, you'll find the abstract, main figures, and links to data and code (as well as the full PDF). Please also check Jeremy's [Google Scholar](https://scholar.google.com/citations?user=yU1oFwgAAAAJ&hl=en) for the most up-to-date compilation of our work.
 :::
+:::::::
 
 </br>
 
 ## 2026
+
 ::: {#pubs-2026}
 :::
 
 ## 2025
+
 ::: {#pubs-2025}
 :::
 
 ## 2024
+
 ::: {#pubs-2024}
 :::
 
 ## 2023
+
 ::: {#pubs-2023}
 :::
 
 ## 2022
+
 ::: {#pubs-2022}
 :::
 
 ## 2021
+
 ::: {#pubs-2021}
 :::
 
 ## 2020
+
 ::: {#pubs-2020}
 :::
-
-
-
-
-
-

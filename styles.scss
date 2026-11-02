@@ -12,10 +12,13 @@ $umn-red-t: #7a001910;
 $gopher-yl: #fc3;
 $gopher-yl-t: #ffcc3320;
 $gopher-yl-t2: #ffcc3340;
+$monarda-purp: #f0d2fb;
+$monarda-purp2: #703585; 
 $amber-yl: #F5B800;
 $black-blue: #252422;
 $black-blue-t: #25242215;
 $flower-white: #FFF8F0;
+$flower-white2: #fdf3e6;
 $flower-white-t: #FFF8F050;
 $white: #FFFFFF;
 $ltgray: #fafafa;
@@ -33,6 +36,7 @@ $body-color: $black-blue; // page text
 $footer-bg: $amber-yl; // footer 
 $footer-fg: $flower-white; // footer foreground elements
 $link-color: $umn-red; // hyperlinks 
+
 
 /*-- scss:rules --*/
 h1, h2, h3, h4, h5, h6 {
@@ -248,9 +252,11 @@ div.quarto-about-jolla .about-link {
 
 .research-callout1 {
   // height: 80%;
+  width: 95%;
   background-color: $white;
   box-sizing: content-box;
-  padding: 15px;
+  padding: 0 !important;
+  overflow: hidden;
   padding-bottom: 5px;
   border-radius: 15px;
   border-style: solid;
@@ -258,8 +264,89 @@ div.quarto-about-jolla .about-link {
   border-width: 1px;
 }
 
+/* Distinct header section */
+.research-callout1 .callout-header {
+  background-color: $amber-yl; /* 👈 Change this to whatever background color you want for your title block */
+  padding: 15px 25px;
+  margin: 0 !important;
+  border-bottom: 1px solid #1d1c1c20; /* Clean separator line between header and body */
+}
+
+/* 🎨 OPTION A: VARIATION 1 (Default / Purple) */
+.research-callout1.purple .callout-header,
+.research-callout1 .callout-header { /* Kept as fallback if no modifier is specified */
+  background-color: $flower-white2; 
+}
+
+/* 🎨 OPTION B: VARIATION 2 (Blue variant) */
+.research-callout1.yl .callout-header {
+  background-color: $amber-yl; 
+}
+
+/* 🎨 OPTION C: VARIATION 3 (Dark blue variant) */
+.research-callout1.dblue .callout-header {
+  background-color: #3A4454; 
+}
+
+/* Forces the H3 inside the header to stay clean with no default margin issues */
+.research-callout1 .callout-header h1 {
+  margin: 0 !important;
+  color: #1d1c1c; /* Text/Icon color for the header title */
+}
+
+
+/* Forces the H3 inside the header to stay clean with no default margin issues */
+.research-callout1 .callout-header h2 {
+  margin: 0 !important;
+  color: #1d1c1c; /* Text/Icon color for the header title */
+}
+
+
+/* Forces the H3 inside the header to stay clean with no default margin issues */
+.research-callout1 .callout-header h3 {
+  margin: 0 !important;
+  color: #1d1c1c; /* Text/Icon color for the header title */
+}
+
+/* Body container padding */
+.research-callout1 .callout-body {
+  padding: 25px 25px;
+}
+
+.research-callout1 .callout-body p {
+  padding-left: 10px; /* Shifts paragraph text specifically */
+  margin-bottom: 0;   /* Keeps bottom margins tight */
+}
+
+/* Spacing out the image from text natively without <br> tags */
+.research-callout1 .callout-body img {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sponsor-grid .uniform-gallery {
+  height: 50px !important;        /* 👈 Set the exact logo height here */
+  width: auto !important;
+  object-fit: contain !important; /* Keeps branding/logos crisp and uncropped */
+  filter: grayscale(20%);         /* Optional: subtly blends sponsor colors together */
+  opacity: 0.9;
+}
+
+/* Creates a flexible row that sizes based on image dimensions */
+.sponsor-logos-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;       /* 👈 Vertically aligns all logos down their center lines */
+  justify-content: space-around; /* 👈 Spreads them evenly across the card with natural gaps */
+  flex-wrap: wrap;           /* Wraps smoothly on small mobile screens */
+  gap: 30px;                 /* Sets a minimum safety gap between logos */
+  margin-top: 20px;          /* Adds breathing room below the "Project sponsors" title */
+  width: 100%;
+}
+
 .research-callout2 {
   // height: 80%;
+  width: 95%;
   background-color: $flower-white;
   box-sizing: content-box;
   padding: 15px;
@@ -299,32 +386,7 @@ div.quarto-about-jolla .about-link {
 
 // Custom styling for primary buttons
 .btn.btn-primary {
-  background-color: $flower-white;       /* Custom background color */
-  border-color: $gopher-yl;           /* Match border color */
-  color: $gopher-yl;                       /* Text color */
-  border-radius: 8px;                   /* Corner rounding */
-  padding: 0.5em 1.25em;                /* Button padding */
-  font-weight: 600;                     /* Text thickness */
-  text-decoration: none;                /* Remove underline from link buttons */
-  transition: all 0.2s ease-in-out;    /* Smooth hover effect */
-
-  // Hover state
-  &:hover, &:focus {
-    background-color: darken($gopher-yl-t2, 10%);
-    border-color: darken($gopher-yl-t2, 10%);
-    color: $gopher-yl;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  }
-
-  // Active / Clicked state
-  &:active {
-    background-color: darken($gopher-yl-t, 15%);
-    border-color: darken($gopher-yl-t, 15%);
-  }
-}
-
-.btn.btn-primary-inv {
-  background-color: $flower-white-t;      /* Custom background color */
+  background-color: $flower-white;      /* Custom background color */
   border-color: $gopher-yl;             /* Match border color */
   color: $gopher-yl;                    /* Text color */
   border-radius: 8px;                   /* Corner rounding */
@@ -346,4 +408,142 @@ div.quarto-about-jolla .about-link {
     background-color: darken($gopher-yl-t, 15%);
     border-color: darken($gopher-yl-t, 15%);
   }
+}
+
+.btn.btn-primary-inv {
+  background-color: $flower-white-t;    /* Custom background color */
+  border-color: $gopher-yl;             /* Match border color */
+  color: $gopher-yl;                    /* Text color */
+  border-radius: 8px;                   /* Corner rounding */
+  padding: 0.5em 1.25em;                /* Button padding */
+  font-weight: 600;                     /* Text thickness */
+  text-decoration: none;                /* Remove underline from link buttons */
+  transition: all 0.2s ease-in-out;     /* Smooth hover effect */
+
+  // Hover state
+  &:hover, &:focus {
+    background-color: darken($gopher-yl-t2, 10%);
+    border-color: darken($gopher-yl-t2, 10%);
+    color: $gopher-yl;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  // Active / Clicked state
+  &:active {
+    background-color: darken($gopher-yl-t, 15%);
+    border-color: darken($gopher-yl-t, 15%);
+  }
+}
+
+/* ==========================================
+   1. SITE-WIDE RESETS (Safe for all pages)
+   ========================================== */
+
+/* Remove default white gap between navbar and main content */
+#quarto-content,
+main.content {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Ensure video elements act as block components (removes inline baseline gap) */
+video {
+  display: block;
+  vertical-align: top;
+  margin-top: 0;
+}
+
+
+/* ==========================================
+   2. HERO VIDEO (Isolated to .video-hero pages)
+   ========================================== */
+
+.video-hero {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  min-height: 50vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 3rem 0;
+  margin-top: 0 !important;
+  top: 0;
+
+  /* Target child video directly inside hero only */
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(1);
+  }
+
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    z-index: 2;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    color: #ffffff;
+    text-align: left;
+    max-width: 80%;
+    max-height: none;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+
+    h1 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Forces uniform image grid scaling */
+img.uniform-gallery {
+  height: 220px !important; /* 👈 Adjust this value up or down to set your ideal row height */
+  width: 100% !important;   /* Makes sure they completely fill their assigned column width */
+  object-fit: cover !important; /* Crops the images evenly so they don't stretch or warp */
+  border-radius: 8px;       /* Optional: Adds a clean rounded corner to each image */
+}
+
+.button-row {
+  display: flex;
+  justify-content: center; /* Centers buttons horizontally */
+  align-items: center;     /* Aligns buttons vertically */
+  gap: 1.5rem;             /* Even spacing between buttons */
+  flex-wrap: wrap;         /* Enables clean stacking on small mobile screens */
+  margin-top: 1.5rem;
+}
+
+/* Ensure the video acts as a block element (removes inline font-baseline gap) */
+video {
+  display: block;
+  vertical-align: top;
+  margin-top: 0;
 }

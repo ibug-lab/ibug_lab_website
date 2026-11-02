@@ -18,9 +18,12 @@ website:
       #  text: "{{< iconify file-icons rstudio size=1em >}} Notebook"
       - href: people/index.qmd
         text: People
-      - research.qmd
-      - publications.qmd
-      - opportunities.qmd
+      - href: research.qmd
+        text: Research
+      - href: publications.qmd
+        text: Publications
+      - href: opportunities.qmd
+        text: Opportunities
     right:
       - href: media/lab-manual_2026-09-08.pdf # providing a relative file path to a pdf will open up a browser-based pdf viewer when clicked
         text: Lab Manual
