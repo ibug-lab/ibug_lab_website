@@ -63,17 +63,21 @@ listing:
 page-layout: full
 ---
 
-:::::::{.research-callout1.yl}
-:::{.callout-header}
+::::: research-callout1.yl
+::: callout-header
 ### {{< iconify clarity:group-solid size=1.25em >}} Meet the group
 :::
 
-:::{.callout-body}
+::: callout-body
 We're a dedicated and diverse group working better understand insect responses to global change and advocate for their conservation. Interested in joining the group? See our available [opportunities](../opportunities.qmd) to learn more about joining the lab.
 :::
 
-![](lab-photo.png){width="75%" fig-align="center"}
-:::::::
+:::: callout-body
+::: {layout="[1]"}
+![](lab_photo.jpg){}
+:::
+::::
+:::::
 
 </br> </br>
 
