@@ -3,31 +3,33 @@ title: ""
 format: html
 ---
 
-:::::::{.research-callout1.yl}
-:::{.callout-header}
+::::: research-callout1.yl
+::: callout-header
 ### {{< iconify streamline-ultimate:job-search-man-bold size=1em >}} Current openings
 :::
 
-:::{.callout-body}
+::: callout-body
+```{=html}
 <!-- 
 We're not currently recruiting students or postdocs for existing positions. However, if you are interested in collaborating on a project or proposal as a prospective student or postdoc, please reach out to me!
 -->
+```
+
 Below you'll find all of the positions we're currently hiring for along with instructions for application and additional information. Please contact Jeremy if you have any questions on applying!
 :::
-:::::::
+:::::
 
-
-
-:::{.hire-alert}
+::: hire-alert
 ### {{< fa temperature-high >}} Postdoctoral researcher
+
 The iBUG lab is recruiting a postdoctoral researcher for an NSF funded project (2 years of guaranteed funding) investigating emergent resilience mechanisms of wild bees to heat waves across scales of biological organization. Greenhouse and field work using *Osmia lignaria* in California in collaboration with Neal Williams (UC Davis) and Rachel Winfree (Rutgers). Hosted at UMN.
 
-[{{< fa temperature-high >}} Apply via UMN Jobs Portal](https://hr.myu.umn.edu/jobs){.btn .btn-primary role="button"}
-[{{< fa file-pdf >}} Read project summary](media/opportunities/nsf-summary.pdf){.btn .btn-primary role="button"}
+[{{< fa temperature-high >}} Apply via UMN Jobs Portal](https://hr.myu.umn.edu/jobs){.btn .btn-primary role="button"} [{{< fa file-pdf >}} Read project summary](media/opportunities/nsf-summary.pdf){.btn .btn-primary role="button"}
 :::
 
 </br>
 
+```{=html}
 <!-- 
 :::{.hire-alert}
 ### {{< fa camera >}} Camera trap technician 
@@ -37,21 +39,22 @@ The iBUG lab is recruiting a researcher to assist with insect camera trap develo
 :::
 
 -->
+```
 
 </br>
 
-:::::{.research-callout1}
-:::{.callout-header}
+::::::: research-callout1
+::: callout-header
 ### What qualities make for successful students?
 :::
 
-:::{.callout-body}
+::: callout-body
 When recruiting staff and students, I am hoping to build a collaborative partnership where we can learn and grow together as scientists. I'm looking for students broadly interested in insect ecology and global change who able to see the work they do, even if foundational, from an applied perspective. There are many attributes that will help motivate successful candidates including curiosity, creativity, problem solving capacity, good communication skills (broadly defined), self-motivation, a vision for how a graduate degree with help advance their career and personal goals, and a *genuine interest and enthusiasm for the scientific endeavor*. Academia can be a fickle, frustrating, and fraught experience. Science moves slow, there are perennial funding challenges, experiments rarely go as planned, and the list goes on. All of the challenges are, at least somewhat, balanced by the excitement and freedom to pursue the knowledge and questions that we find most fascinating. It's important to remember that science is a team sport, but there is still a high-degree of intrinsic motivation required to persevere through its many challenges. It's also important to know that no one arrives with all of the skills needed to succeed in grad school: they develop through time, effort, feedback, and having grace for yourself as a developing scientist.
 
 Take a look at this [great article on applying to graduate school](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/bes2.1917) for tips on preparing a successful application and determining whether a graduate degree is right for you.
 :::
 
-::::{.callout-body}
+:::: callout-body
 ::: {layout="[1,1,1,1]"}
 ![](./media/opportunities/opportunities1.jpg){.uniform-gallery}
 
@@ -62,4 +65,4 @@ Take a look at this [great article on applying to graduate school](https://esajo
 ![](./media/opportunities/opportunities4.jpg){.uniform-gallery}
 :::
 ::::
-::::::
+:::::::
