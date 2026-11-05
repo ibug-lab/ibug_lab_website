@@ -9,12 +9,15 @@ format: html
 :::
 
 :::{.callout-body}
+<!-- 
 We're not currently recruiting students or postdocs for existing positions. However, if you are interested in collaborating on a project or proposal as a prospective student or postdoc, please reach out to me!
+-->
+Below you'll find all of the positions we're currently hiring for along with instructions for application and additional information. Please contact Jeremy if you have any questions on applying!
 :::
 :::::::
 
-```{=html}
-<!-- 
+
+
 :::{.hire-alert}
 ### {{< fa temperature-high >}} Postdoctoral researcher
 The iBUG lab is recruiting a postdoctoral researcher for an NSF funded project (2 years of guaranteed funding) investigating emergent resilience mechanisms of wild bees to heat waves across scales of biological organization. Greenhouse and field work using *Osmia lignaria* in California in collaboration with Neal Williams (UC Davis) and Rachel Winfree (Rutgers). Hosted at UMN.
@@ -25,6 +28,7 @@ The iBUG lab is recruiting a postdoctoral researcher for an NSF funded project (
 
 </br>
 
+<!-- 
 :::{.hire-alert}
 ### {{< fa camera >}} Camera trap technician 
 The iBUG lab is recruiting a researcher to assist with insect camera trap development and data management. The position will involve designing, building, and maintaining the fleet of active research camera traps in addition to building data processing pipelines in coordination with collaborators at other institutions. 
@@ -33,7 +37,6 @@ The iBUG lab is recruiting a researcher to assist with insect camera trap develo
 :::
 
 -->
-```
 
 </br>
 
