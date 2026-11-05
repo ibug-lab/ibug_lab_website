@@ -13,7 +13,7 @@ $gopher-yl: #fc3;
 $gopher-yl-t: #ffcc3320;
 $gopher-yl-t2: #ffcc3340;
 $monarda-purp: #f0d2fb;
-$monarda-purp2: #703585; 
+$monarda-purp2: #703585;
 $amber-yl: #F5B800;
 $black-blue: #252422;
 $black-blue-t: #25242215;
@@ -39,7 +39,12 @@ $link-color: $umn-red; // hyperlinks
 
 
 /*-- scss:rules --*/
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $robo;
   font-weight: 600;
   margin-top: 0.5rem;
@@ -51,7 +56,7 @@ body {
   font-weight: 300;
 }
 
-.navbar-brand img { 
+.navbar-brand img {
   max-height: 60px;
   width: auto;
 }
@@ -71,133 +76,135 @@ body {
   padding-top: 0;
   font-size: 0.8rem;
 }
+
 .quarto-title-block {
 
-    .quarto-title .quarto-categories {
-        padding-bottom: 0;
-        flex-wrap: wrap;
-        row-gap: 0.4em;
-    }
+  .quarto-title .quarto-categories {
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    row-gap: 0.4em;
+  }
 
-    .project-details {
-        background-color: rgba($umn-red, 0.1);
-        padding: 0.8em;
-        margin: 1em 0;
-    }
+  .project-details {
+    background-color: rgba($umn-red, 0.1);
+    padding: 0.8em;
+    margin: 1em 0;
+  }
 
-    .quarto-title-meta-heading.manual {
-        margin-top: 2em !important;
-    }
+  .quarto-title-meta-heading.manual {
+    margin-top: 2em !important;
+  }
 
-    .project-links {
-        padding: 0;
-        margin-bottom: 0;
-    }
+  .project-links {
+    padding: 0;
+    margin-bottom: 0;
+  }
 
-    .project-link {
-        display: inline-block;
-        white-space: nowrap;
-        padding: 0 1em 0 0;
-        font-weight: bold;
-    }
+  .project-link {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 0 1em 0 0;
+    font-weight: bold;
+  }
 
 }
 
 .back-nav {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .research {
-    .back-nav a {
-        color: shift-color($umn-red, -50%);
-    }
-    
-    .quarto-title .quarto-categories .quarto-category {
-        background-color: shift-color($umn-red, -75%);
-        color: $umn-red;
-        font-size: 0.8em;
-        opacity: 1;
-    }
+  .back-nav a {
+    color: shift-color($umn-red, -50%);
+  }
 
-    .project-categories {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0.35em 0 0.35em;
-        padding-top: 0.35em;
-        padding-left: 0.5em;
-        padding-bottom: 0;
-        row-gap: 0.4em;
-        column-gap: 0.4em;
-        font-family: $headings-font-family;
+  .quarto-title .quarto-categories .quarto-category {
+    background-color: shift-color($umn-red, -75%);
+    color: $umn-red;
+    font-size: 0.8em;
+    opacity: 1;
+  }
 
-        .project-category {
-            padding: 0.25em 0.75em 0.25em 0em;
-            font-size: 0.8em;
-            text-transform: uppercase;
-        }
+  .project-categories {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.35em 0 0.35em;
+    padding-top: 0.35em;
+    padding-left: 0.5em;
+    padding-bottom: 0;
+    row-gap: 0.4em;
+    column-gap: 0.4em;
+    font-family: $headings-font-family;
+
+    .project-category {
+      padding: 0.25em 0.75em 0.25em 0em;
+      font-size: 0.8em;
+      text-transform: uppercase;
     }
+  }
 }
 
 .project-list {
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 2em;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2em;
 
-        li.project {
-            margin-bottom: 2.5em;
-            border-left: 6px solid shift-color($umn-red, -90%);
+    li.project {
+      margin-bottom: 2.5em;
+      border-left: 6px solid shift-color($umn-red, -90%);
 
-            p {
-                margin: 0;
-            }
-        }
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .project-content {
+    padding-left: 0.5em;
+
+    .status {
+      font-size: 1rem;
+      font-weight: 250;
+      padding: 0.2em;
+      margin-right: 0.5em;
+    }
+  }
+
+  ul.project-links {
+    margin-bottom: 0;
+  }
+
+  .project-details-listing {
+    margin-top: 0.8em;
+    background-color: shift-color($umn-red, -90%);
+    font-size: 0.7rem;
+
+    @media (max-width: map-get($grid-breakpoints, md)) {
+      font-size: 0.95rem;
     }
 
-    .project-content {
-        padding-left: 0.5em;
-
-        .status {
-            font-size: 1rem;
-            font-weight: 250;
-            padding: 0.2em;
-            margin-right: 0.5em;
-        }
+    .project-link {
+      display: inline-block;
+      white-space: nowrap;
+      padding: 0.5em 0.5em 0.5em 1em;
     }
 
-    ul.project-links {
-        margin-bottom: 0;
+    .details {
+      background-color: $umn-red;
+      padding-right: 1.5em;
+
+      a {
+        color: #FFFFFF;
+      }
     }
-
-    .project-details-listing {
-        margin-top: 0.8em;
-        background-color: shift-color($umn-red, -90%);
-        font-size: 0.7rem;
-
-        @media (max-width: map-get($grid-breakpoints, md)) {
-            font-size: 0.95rem;
-        }
-
-        .project-link {
-            display: inline-block;
-            white-space: nowrap;
-            padding: 0.5em 0.5em 0.5em 1em;
-        }
-
-        .details {
-            background-color: $umn-red;
-            padding-right: 1.5em;
-
-            a {
-                color: #FFFFFF;
-            }
-        }
-    }
+  }
 }
 
 .quarto-figure {
   margin-bottom: 10px;
 }
+
 figcaption {
   font-size: 1em;
 }
@@ -225,22 +232,23 @@ hr {
   margin: 1rem 0;
   color: inherit;
   border: 0;
-    border-top-width: 0px;
-    border-top-style: none;
-    border-top-color: currentcolor;
+  border-top-width: 0px;
+  border-top-style: none;
+  border-top-color: currentcolor;
   border-top: 1px solid;
   opacity: .5;
 }
 
 div.quarto-about-jolla .about-link {
   color: $flower-white;
-  text-decoration:none;
-  border:solid 1px
+  text-decoration: none;
+  border: solid 1px
 }
 
 .listing-box-title {
   font-size: 18px;
 }
+
 // body {
 //  background-image: url("https://jhemberger.github.io/images/photography/insects/2017_Insects-1.jpg");
 //  background-size: cover;
@@ -266,46 +274,52 @@ div.quarto-about-jolla .about-link {
 
 /* Distinct header section */
 .research-callout1 .callout-header {
-  background-color: $amber-yl; /* 👈 Change this to whatever background color you want for your title block */
+  background-color: $amber-yl;
+  /* 👈 Change this to whatever background color you want for your title block */
   padding: 15px 25px;
   margin: 0 !important;
-  border-bottom: 1px solid #1d1c1c20; /* Clean separator line between header and body */
+  border-bottom: 1px solid #1d1c1c20;
+  /* Clean separator line between header and body */
 }
 
 /* 🎨 OPTION A: VARIATION 1 (Default / Purple) */
 .research-callout1.purple .callout-header,
-.research-callout1 .callout-header { /* Kept as fallback if no modifier is specified */
-  background-color: $flower-white2; 
+.research-callout1 .callout-header {
+  /* Kept as fallback if no modifier is specified */
+  background-color: $flower-white2;
 }
 
 /* 🎨 OPTION B: VARIATION 2 (Blue variant) */
 .research-callout1.yl .callout-header {
-  background-color: $amber-yl; 
+  background-color: $amber-yl;
 }
 
 /* 🎨 OPTION C: VARIATION 3 (Dark blue variant) */
 .research-callout1.dblue .callout-header {
-  background-color: #3A4454; 
+  background-color: #3A4454;
 }
 
 /* Forces the H3 inside the header to stay clean with no default margin issues */
 .research-callout1 .callout-header h1 {
   margin: 0 !important;
-  color: #1d1c1c; /* Text/Icon color for the header title */
+  color: #1d1c1c;
+  /* Text/Icon color for the header title */
 }
 
 
 /* Forces the H3 inside the header to stay clean with no default margin issues */
 .research-callout1 .callout-header h2 {
   margin: 0 !important;
-  color: #1d1c1c; /* Text/Icon color for the header title */
+  color: #1d1c1c;
+  /* Text/Icon color for the header title */
 }
 
 
 /* Forces the H3 inside the header to stay clean with no default margin issues */
 .research-callout1 .callout-header h3 {
   margin: 0 !important;
-  color: #1d1c1c; /* Text/Icon color for the header title */
+  color: #1d1c1c;
+  /* Text/Icon color for the header title */
 }
 
 /* Body container padding */
@@ -314,8 +328,10 @@ div.quarto-about-jolla .about-link {
 }
 
 .research-callout1 .callout-body p {
-  padding-left: 10px; /* Shifts paragraph text specifically */
-  margin-bottom: 0;   /* Keeps bottom margins tight */
+  padding-left: 10px;
+  /* Shifts paragraph text specifically */
+  margin-bottom: 0;
+  /* Keeps bottom margins tight */
 }
 
 /* Spacing out the image from text natively without <br> tags */
@@ -325,10 +341,13 @@ div.quarto-about-jolla .about-link {
 }
 
 .sponsor-grid .uniform-gallery {
-  height: 50px !important;        /* 👈 Set the exact logo height here */
+  height: 50px !important;
+  /* 👈 Set the exact logo height here */
   width: auto !important;
-  object-fit: contain !important; /* Keeps branding/logos crisp and uncropped */
-  filter: grayscale(20%);         /* Optional: subtly blends sponsor colors together */
+  object-fit: contain !important;
+  /* Keeps branding/logos crisp and uncropped */
+  filter: grayscale(20%);
+  /* Optional: subtly blends sponsor colors together */
   opacity: 0.9;
 }
 
@@ -336,11 +355,16 @@ div.quarto-about-jolla .about-link {
 .sponsor-logos-row {
   display: flex;
   flex-direction: row;
-  align-items: center;       /* 👈 Vertically aligns all logos down their center lines */
-  justify-content: space-around; /* 👈 Spreads them evenly across the card with natural gaps */
-  flex-wrap: wrap;           /* Wraps smoothly on small mobile screens */
-  gap: 30px;                 /* Sets a minimum safety gap between logos */
-  margin-top: 20px;          /* Adds breathing room below the "Project sponsors" title */
+  align-items: center;
+  /* 👈 Vertically aligns all logos down their center lines */
+  justify-content: space-around;
+  /* 👈 Spreads them evenly across the card with natural gaps */
+  flex-wrap: wrap;
+  /* Wraps smoothly on small mobile screens */
+  gap: 30px;
+  /* Sets a minimum safety gap between logos */
+  margin-top: 20px;
+  /* Adds breathing room below the "Project sponsors" title */
   width: 100%;
 }
 
@@ -386,17 +410,26 @@ div.quarto-about-jolla .about-link {
 
 // Custom styling for primary buttons
 .btn.btn-primary {
-  background-color: $flower-white;      /* Custom background color */
-  border-color: $gopher-yl;             /* Match border color */
-  color: $gopher-yl;                    /* Text color */
-  border-radius: 8px;                   /* Corner rounding */
-  padding: 0.5em 1.25em;                /* Button padding */
-  font-weight: 600;                     /* Text thickness */
-  text-decoration: none;                /* Remove underline from link buttons */
-  transition: all 0.2s ease-in-out;     /* Smooth hover effect */
+  background-color: $flower-white;
+  /* Custom background color */
+  border-color: $gopher-yl;
+  /* Match border color */
+  color: $gopher-yl;
+  /* Text color */
+  border-radius: 8px;
+  /* Corner rounding */
+  padding: 0.5em 1.25em;
+  /* Button padding */
+  font-weight: 600;
+  /* Text thickness */
+  text-decoration: none;
+  /* Remove underline from link buttons */
+  transition: all 0.2s ease-in-out;
+  /* Smooth hover effect */
 
   // Hover state
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: darken($gopher-yl-t2, 10%);
     border-color: darken($gopher-yl-t2, 10%);
     color: $gopher-yl;
@@ -411,17 +444,26 @@ div.quarto-about-jolla .about-link {
 }
 
 .btn.btn-primary-inv {
-  background-color: $flower-white-t;    /* Custom background color */
-  border-color: $gopher-yl;             /* Match border color */
-  color: $gopher-yl;                    /* Text color */
-  border-radius: 8px;                   /* Corner rounding */
-  padding: 0.5em 1.25em;                /* Button padding */
-  font-weight: 600;                     /* Text thickness */
-  text-decoration: none;                /* Remove underline from link buttons */
-  transition: all 0.2s ease-in-out;     /* Smooth hover effect */
+  background-color: $flower-white-t;
+  /* Custom background color */
+  border-color: $gopher-yl;
+  /* Match border color */
+  color: $gopher-yl;
+  /* Text color */
+  border-radius: 8px;
+  /* Corner rounding */
+  padding: 0.5em 1.25em;
+  /* Button padding */
+  font-weight: 600;
+  /* Text thickness */
+  text-decoration: none;
+  /* Remove underline from link buttons */
+  transition: all 0.2s ease-in-out;
+  /* Smooth hover effect */
 
   // Hover state
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: darken($gopher-yl-t2, 10%);
     border-color: darken($gopher-yl-t2, 10%);
     color: $gopher-yl;
@@ -526,18 +568,26 @@ video {
 
 /* Forces uniform image grid scaling */
 img.uniform-gallery {
-  height: 220px !important; /* 👈 Adjust this value up or down to set your ideal row height */
-  width: 100% !important;   /* Makes sure they completely fill their assigned column width */
-  object-fit: cover !important; /* Crops the images evenly so they don't stretch or warp */
-  border-radius: 8px;       /* Optional: Adds a clean rounded corner to each image */
+  height: 220px !important;
+  /* 👈 Adjust this value up or down to set your ideal row height */
+  width: 100% !important;
+  /* Makes sure they completely fill their assigned column width */
+  object-fit: cover !important;
+  /* Crops the images evenly so they don't stretch or warp */
+  border-radius: 8px;
+  /* Optional: Adds a clean rounded corner to each image */
 }
 
 .button-row {
   display: flex;
-  justify-content: center; /* Centers buttons horizontally */
-  align-items: center;     /* Aligns buttons vertically */
-  gap: 1.5rem;             /* Even spacing between buttons */
-  flex-wrap: wrap;         /* Enables clean stacking on small mobile screens */
+  justify-content: center;
+  /* Centers buttons horizontally */
+  align-items: center;
+  /* Aligns buttons vertically */
+  gap: 1.5rem;
+  /* Even spacing between buttons */
+  flex-wrap: wrap;
+  /* Enables clean stacking on small mobile screens */
   margin-top: 1.5rem;
 }
 
