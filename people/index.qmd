@@ -63,7 +63,7 @@ listing:
 page-layout: full
 ---
 
-::::: research-callout1.yl
+::::::: research-callout1.yl
 ::: callout-header
 ### {{< iconify clarity:group-solid size=1.25em >}} Meet the group
 :::
@@ -74,10 +74,10 @@ We're a dedicated and diverse group working better understand insect responses t
 
 :::: callout-body
 ::: {layout="[1]"}
-![](lab_photo.jpg){}
+![**iBUG lab Fall 2026** L-->R Isabella Manning, Ana Karina Andrade, Jake Wiebe, Dennis Zrust, Jeremy Hemberger, Haidyn Larson](lab_photo.jpg)
 :::
 ::::
-:::::
+:::::::
 
 </br> </br>
 
