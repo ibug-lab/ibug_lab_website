@@ -341,14 +341,15 @@ div.quarto-about-jolla .about-link {
 }
 
 .sponsor-grid .uniform-gallery {
-  height: 50px !important;
+  height: 75px !important;
   /* 👈 Set the exact logo height here */
   width: auto !important;
-  object-fit: contain !important;
+  object-fit: fill !important;
   /* Keeps branding/logos crisp and uncropped */
   filter: grayscale(20%);
   /* Optional: subtly blends sponsor colors together */
   opacity: 0.9;
+  padding: 20px;
 }
 
 /* Creates a flexible row that sizes based on image dimensions */
@@ -357,11 +358,11 @@ div.quarto-about-jolla .about-link {
   flex-direction: row;
   align-items: center;
   /* 👈 Vertically aligns all logos down their center lines */
-  justify-content: space-around;
+  justify-content: space-evenly;
   /* 👈 Spreads them evenly across the card with natural gaps */
   flex-wrap: wrap;
   /* Wraps smoothly on small mobile screens */
-  gap: 30px;
+  gap: 50px;
   /* Sets a minimum safety gap between logos */
   margin-top: 20px;
   /* Adds breathing room below the "Project sponsors" title */
@@ -568,7 +569,7 @@ video {
 
 /* Forces uniform image grid scaling */
 img.uniform-gallery {
-  height: 220px !important;
+  height: 150px !important;
   /* 👈 Adjust this value up or down to set your ideal row height */
   width: 100% !important;
   /* Makes sure they completely fill their assigned column width */

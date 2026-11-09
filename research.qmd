@@ -3,15 +3,15 @@ title: ""
 format: html
 ---
 
-:::::::{.research-callout1.yl}
-:::{.callout-header}
+::::: research-callout1.yl
+::: callout-header
 ### {{< iconify mdi:bee-flower size=1.25em >}} Research
 :::
 
-:::{.callout-body}
+::: callout-body
 Our work focuses primarily on how insects respond to changes in land-use due to agriculture and shifts in climate and extreme weather in working landscapes. We use a variety of research approaches, but we specialize in using ecoinformatics and cross-scale experimental methods to examine insect responses from behaviors to communities. We strive to make our science open and accessible and to excel at clear science communication. Below, you'll find a non-exhaustive list of our ongoing research areas. <!-- <div class="alert alert-dismissible alert-warning"> --> <!--   <p class="mb-0">Our work focuses primarily on how insects respond to changes in land-use due to agriculture and shifts in climate and extreme weather in working landscapes. We use a variety of research approaches, but we specialize in using ecoinformatics and cross-scale experimental methods to examine insect responses from behaviors to communities. We strive to make our science open and accessible and to excel at clear science communication. Below, you'll find a non-exhaustive list of our ongoing research areas.</p> --> <!-- </div> --> <!-- </br> -->
 :::
-:::::::
+:::::
 
 </br>
 
@@ -75,7 +75,7 @@ We're only beginning to understand the impact of a rapidly shifting climate on i
 
 </br>
 
-::::::: research-callout1
+:::::::: research-callout1
 ::: callout-header
 ### {{< iconify material-symbols speed-camera-rounded size=1.5em >}} Novel tools for insect biodiversity monitoring
 :::
@@ -84,12 +84,12 @@ We're only beginning to understand the impact of a rapidly shifting climate on i
 Monitoring and quantifying insect populations has long been a challenge plaguing entomologists and ecologists, alike. Highly variable populations, a limited pool of taxonomic expertise, and the simple logistical and financial challenges of conducting repeated, standardized surveys using people power each contribute to this challenge. To address this, we have been helping lead the development of affordable, autonomous camera-based monitoring systems using computer vision algorithms to automate data processing that can be deployed to address a range of research and monitoring questions, working closely with collaborators at [Kansas State University](https://www.beemachine.ai/). So far, we have been using these systems to understand how climate and agricultural drivers are together interacting to impact insect community activity and plant-pollinator interactions, quantify the impact of heat waves on pollinator visitation, and develop non-lethal tools for long-term monitoring of bumble bee biodiversity.
 :::
 
-:::{.callout-body .button-row}
-[{{< iconify fluent-mdl2:script size=1.25em >}} Check out our BombusCam](https://ibug-lab.github.io/bombuscam-website/about.html){.btn .btn-primary role="button"} 
+::: {.callout-body .button-row}
+[{{< iconify fluent-mdl2:script size=1.25em >}} Check out our BombusCam](https://ibug-lab.github.io/bombuscam-website/about.html){.btn .btn-primary role="button"}
 
-[{{< iconify cib:github size=1.25em >}} See our build plans](https://github.com/ibug-lab/bombuscam){.btn .btn-primary role="button"} 
+[{{< iconify cib:github size=1.25em >}} See our build plans](https://github.com/ibug-lab/bombuscam){.btn .btn-primary role="button"}
 
-[{{< iconify lucide-lab:bee size=1.25em >}} Check out BeeMachine](https://www.beemachine.ai/){.btn .btn-primary role="button"} 
+[{{< iconify lucide-lab:bee size=1.25em >}} Check out BeeMachine](https://www.beemachine.ai/){.btn .btn-primary role="button"}
 :::
 
 :::: callout-body
@@ -101,4 +101,4 @@ Monitoring and quantifying insect populations has long been a challenge plaguing
 ![](./media/research/trap-closeup.jpeg){.lightbox .uniform-gallery}
 :::
 ::::
-:::::::
+::::::::
