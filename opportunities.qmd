@@ -19,23 +19,21 @@ Below you'll find all of the positions we're currently hiring for along with ins
 :::
 :::::
 
-:::: hire-alert
+:::::: hire-alert
 ### {{< iconify energy-icons:heatwave-20-bold size=1.35em >}} Postdoctoral researcher
 
 The iBUG lab is recruiting a postdoctoral researcher for an NSF funded project (2 years of guaranteed funding) investigating emergent resilience mechanisms of wild bees to heat waves across scales of biological organization. Greenhouse and field work using *Osmia lignaria* in California in collaboration with Neal Williams (UC Davis) and Rachel Winfree (Rutgers). Hosted at UMN.
 
-:::{.callout-body .button-row}
-[{{< fa file-pdf >}} View full job description](/media/opportunities/job-description_nsf-postdoc.pdf){.btn .btn-primary role="button"} [{{< iconify pepicons-pop:cv size=1.2em >}} Apply via UMN Jobs Portal](https://hr.myu.umn.edu/jobs){.btn .btn-primary role="button"} [{{< fa file-pdf >}} Read project summary](media/opportunities/nsf-summary.pdf){.btn .btn-primary role="button"}
+::: {.callout-body .button-row}
+[{{< fa file-pdf >}} View full job description](/media/opportunities/job-description_nsf-postdoc.pdf){.btn .btn-primary role="button"} [{{< iconify pepicons-pop:cv size=1.2em >}} Apply via UMN Jobs Portal](https://hr.myu.umn.edu/jobs/ext/377108){.btn .btn-primary role="button"} [{{< fa file-pdf >}} Read project summary](media/opportunities/nsf-summary.pdf){.btn .btn-primary role="button"}
 :::
 
-::::{.callout-body .sponsor-grid}
-::: {.sponsor-logos-row}
-![](./media/research/logos/nsf.png){.uniform-gallery}
-![](./media/research/logos/umn.png){height="30%" .uniform-gallery}
-![](./media/research/logos/ucdavis.png){.uniform-gallery}
+:::: {.callout-body .sponsor-grid}
+::: sponsor-logos-row
+![](./media/research/logos/nsf.png){.uniform-gallery} ![](./media/research/logos/umn.png){.uniform-gallery height="30%"} ![](./media/research/logos/ucdavis.png){.uniform-gallery}
 :::
 ::::
-::::
+::::::
 
 </br>
 
